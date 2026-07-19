@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links · The Open Page</title>
+  <meta name="description" content="Every place to connect with The Open Page." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Tangerine:wght@700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/premium.css" />
+  <style>
+    .linkrow{display:flex;align-items:center;gap:14px;background:var(--bg-raised);border:1px solid var(--border);
+      border-radius:var(--radius);padding:15px 18px;margin:0 0 11px;color:var(--text);text-decoration:none;transition:.12s;max-width:520px;}
+    .linkrow:hover{border-color:var(--gold);transform:translateY(-1px);}
+    .linkrow__title{font-weight:600;} .linkrow__sub{font-size:.8rem;color:var(--text-muted);}
+    .links-wrap{max-width:520px;margin:0 auto;}
+  </style>
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://openpage.example.com/links" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Open Page" />
+  <meta property="og:title" content="Links · The Open Page" />
+  <meta property="og:description" content="Every place to connect with The Open Page." />
+  <meta property="og:url" content="https://openpage.example.com/links" />
+  <meta property="og:image" content="https://openpage.example.com/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Links · The Open Page" />
+  <meta name="twitter:description" content="Every place to connect with The Open Page." />
+  <meta name="twitter:image" content="https://openpage.example.com/assets/og.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#1e2b22" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="The Open Page" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://openpage.example.com/#website","url":"https://openpage.example.com","name":"The Open Page","description":"Every idea deserves a page. Alex Rivers helps first-time authors shape a tangled draft into a book that resonates.","publisher":{"@id":"https://openpage.example.com/#creator"},"inLanguage":"en"},{"@type":"Person","@id":"https://openpage.example.com/#creator","name":"The Open Page","url":"https://openpage.example.com","description":"Every idea deserves a page. Alex Rivers helps first-time authors shape a tangled draft into a book that resonates.","image":"https://openpage.example.com/assets/logo.png","sameAs":["https://example.com/community","https://example.com/youtube","https://example.com/linkedin","https://example.com/instagram","https://example.com/tiktok"]},{"@type":"WebPage","@id":"https://openpage.example.com/links#webpage","url":"https://openpage.example.com/links","name":"Links · The Open Page","description":"Every place to connect with The Open Page.","isPartOf":{"@id":"https://openpage.example.com/#website"},"about":{"@id":"https://openpage.example.com/#creator"},"inLanguage":"en"}]}</script>
+</head>
+<body>
+  <nav class="nav"><div class="container nav__inner">
+    <a class="nav__brand" href="/">The Open Page</a>
+    <ul class="nav__links">
+      <li><a href="/">Home</a></li>
+      <li><a href="soul-insight">Soul Insight</a></li>
+      <li><a href="links" class="is-active">Links</a></li>
+      <li><a href="products">Books</a></li>
+    </ul>
+  </div></nav>
+
+  <header class="section section--tight"><div class="container text-center">
+    <p class="eyebrow">Find me at</p>
+    <h1 class="display">Links</h1>
+    <p class="section-intro">Every place to connect, all in one spot.</p>
+  </div></header>
+
+  <section class="section--tight"><div class="container"><div class="links-wrap">
+    <a class="linkrow" href="https://example.com/community" target="_blank" rel="noopener"><div><div class="linkrow__title">Community</div><div class="linkrow__sub">Join the community</div></div></a>
+    <a class="linkrow" href="https://example.com/youtube" target="_blank" rel="noopener"><div><div class="linkrow__title">YouTube</div><div class="linkrow__sub">Watch &amp; subscribe</div></div></a>
+    <a class="linkrow" href="https://example.com/linkedin" target="_blank" rel="noopener"><div><div class="linkrow__title">LinkedIn</div><div class="linkrow__sub">Connect with me</div></div></a>
+    <a class="linkrow" href="https://example.com/instagram" target="_blank" rel="noopener"><div><div class="linkrow__title">Instagram</div><div class="linkrow__sub">@theopenpage</div></div></a>
+    <a class="linkrow" href="https://example.com/tiktok" target="_blank" rel="noopener"><div><div class="linkrow__title">TikTok</div><div class="linkrow__sub">@theopenpage</div></div></a>
+  </div></div></section>
+
+  <footer id="site-footer"></footer>
+  <script src="js/footer.js"></script>
+  <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});}</script>
+</body>
+</html>

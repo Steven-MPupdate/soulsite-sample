@@ -1,0 +1,18 @@
+# The Open Page
+
+> Every idea deserves a page. Alex Rivers helps first-time authors shape a tangled draft into a book that resonates.
+
+The Open Page is a creator in the Mirror Path SoulSites network.
+
+## Pages
+- [Home](https://openpage.example.com/)
+- [Links](https://openpage.example.com/links)
+- [Products](https://openpage.example.com/products)
+- [Soul Insight](https://openpage.example.com/soul-insight)
+
+## Connect
+- https://example.com/community
+- https://example.com/youtube
+- https://example.com/linkedin
+- https://example.com/instagram
+- https://example.com/tiktok

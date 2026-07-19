@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soul Insight · The Open Page</title>
+  <meta name="description" content="The Soul Insight of The Open Page: the trials, the why, who they serve, and how to work with them." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Tangerine:wght@700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/premium.css" />
+  <style>
+    /* Soul Insight cards (scoped) */
+    .si-card{background:var(--bg-raised);border:1px solid var(--border);border-radius:10px;margin:0 0 20px;overflow:hidden;box-shadow:var(--shadow);}
+    .si-card>summary{list-style:none;cursor:pointer;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--text);}
+    .si-card>summary::-webkit-details-marker{display:none;}
+    .si-card>summary:hover{color:var(--gold);}
+    .si-card>summary .si-chevron{color:var(--gold);font-size:1.4rem;transition:transform .2s;flex-shrink:0;}
+    .si-card[open]>summary .si-chevron{transform:rotate(90deg);}
+    .si-card>summary .si-brand{display:block;font-family:var(--font-body);font-size:.8rem;font-weight:600;color:var(--gold);margin-top:4px;letter-spacing:.1em;text-transform:uppercase;}
+    .si-body{padding:0 28px 30px;}
+    .si-top{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:4px 0 26px;}
+    .si-feature{border:1px solid var(--border-soft);border-left:2px solid var(--gold-deep);border-radius:8px;padding:16px 18px;background:rgba(0,0,0,.12);}
+    .si-feature h4{font-family:var(--font-display);color:var(--gold);margin:0 0 10px;font-size:1rem;letter-spacing:.05em;}
+    .si-feature ul{margin:0;padding-left:18px;color:var(--text-muted);} .si-feature ul li{margin:0 0 7px;}
+    .si-feature p{margin:0;color:var(--text-muted);}
+    .si-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+    .si-block{margin:0 0 20px;} .si-block h4{font-family:var(--font-display);color:var(--text);margin:0 0 8px;font-size:1.15rem;}
+    .si-block p,.si-block ul{color:var(--text-muted);margin:0;} .si-block ul{padding-left:18px;} .si-block ul li{margin:0 0 6px;}
+    .si-sig{border-top:1px solid var(--border-soft);margin-top:8px;padding-top:16px;font-family:var(--font-display);color:var(--gold);font-style:italic;font-size:1.15rem;}
+    @media(max-width:720px){ .si-top,.si-cols{grid-template-columns:1fr;} }
+  </style>
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://openpage.example.com/soul-insight" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Open Page" />
+  <meta property="og:title" content="Soul Insight · The Open Page" />
+  <meta property="og:description" content="The Soul Insight of The Open Page: the trials, the why, who they serve, and how to work with them." />
+  <meta property="og:url" content="https://openpage.example.com/soul-insight" />
+  <meta property="og:image" content="https://openpage.example.com/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Soul Insight · The Open Page" />
+  <meta name="twitter:description" content="The Soul Insight of The Open Page: the trials, the why, who they serve, and how to work with them." />
+  <meta name="twitter:image" content="https://openpage.example.com/assets/og.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#1e2b22" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="The Open Page" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://openpage.example.com/#website","url":"https://openpage.example.com","name":"The Open Page","description":"Every idea deserves a page. Alex Rivers helps first-time authors shape a tangled draft into a book that resonates.","publisher":{"@id":"https://openpage.example.com/#creator"},"inLanguage":"en"},{"@type":"Person","@id":"https://openpage.example.com/#creator","name":"The Open Page","url":"https://openpage.example.com","description":"Every idea deserves a page. Alex Rivers helps first-time authors shape a tangled draft into a book that resonates.","image":"https://openpage.example.com/assets/logo.png","sameAs":["https://example.com/community","https://example.com/youtube","https://example.com/linkedin","https://example.com/instagram","https://example.com/tiktok"]},{"@type":"WebPage","@id":"https://openpage.example.com/soul-insight#webpage","url":"https://openpage.example.com/soul-insight","name":"Soul Insight · The Open Page","description":"The Soul Insight of The Open Page: the trials, the why, who they serve, and how to work with them.","isPartOf":{"@id":"https://openpage.example.com/#website"},"about":{"@id":"https://openpage.example.com/#creator"},"inLanguage":"en"}]}</script>
+</head>
+<body>
+  <nav class="nav"><div class="container nav__inner">
+    <a class="nav__brand" href="/">The Open Page</a>
+    <ul class="nav__links">
+      <li><a href="/">Home</a></li>
+      <li><a href="soul-insight" class="is-active">Soul Insight</a></li>
+      <li><a href="links">Links</a></li>
+      <li><a href="products">Books</a></li>
+    </ul>
+  </div></nav>
+
+  <header class="section section--tight"><div class="container text-center">
+    <p class="eyebrow">Who I am</p>
+    <h1 class="display">Soul Insight</h1>
+    <p class="section-intro">The trials moved through, why this work, who it serves, and how to work together.</p>
+  </div></header>
+
+  <section class="section--tight"><div class="container">
+
+    <details class="si-card" open>
+      <summary><span>The Open Page · Soul Insight<span class="si-brand">International Bestselling Author · Writing Coach · Founder of The Open Page</span></span><span class="si-chevron">›</span></summary>
+      <div class="si-body">
+        <div class="si-top">
+          <div class="si-feature"><h4>Pain Points They Solve</h4><ul>
+            <li>Heart-led writers who have a story inside them but cannot get it finished and published</li><li>Writers overwhelmed by the whole publishing process, from outlining to book cover to ISBN to marketing</li><li>Aspiring authors who keep procrastinating or deprioritizing their book until years pass without action</li><li>Writers who burn out trying to navigate editing, formatting, and promotion entirely on their own</li></ul></div>
+          <div class="si-feature"><h4>Why They Do It</h4><p>Alex created The Open Page because the first book was a lonely, expensive scramble to figure out alone. Between a full-time job and a young family, Alex spent years finishing a first manuscript, learning the hard way how outlining, editing, and publishing actually fit together. After the bestseller The Quiet Compass, Alex built a community and a professional team so other writers would not have to piece the process together on their own.</p></div>
+        </div>
+        <div class="si-cols">
+          <div>
+            <div class="si-block"><h4>The Trials</h4><p>For years Alex wrote in stolen hours, early mornings and late nights, and never quite finished. Three abandoned drafts and a folder of unsent query letters piled up. The first real book was self-published at considerable personal cost, then stalled with a publisher that overpromised and underdelivered, a slow and discouraging education in how the industry really works.</p></div>
+            <div class="si-block"><h4>The Turning Point</h4><p>After sharing early chapters in a small writers' group, Alex kept hearing the same question: why isn't this finished yet? That question landed. Alex committed to a repeatable process, published the international bestseller The Quiet Compass, and realized that same process could help other writers skip years of trial and error, which led directly to founding The Open Page.</p></div>
+          </div>
+          <div>
+            <div class="si-block"><h4>The Vision</h4><p>Alex is finishing a new novel and a series of craft workshops that show writers different ways to tell a story. The broader vision is to grow The Open Page so dedicated writers everywhere can move from idea to published book in as little as six months, supported by a full professional team.</p></div>
+            <div class="si-block"><h4>Who They Serve</h4><p>Dedicated, heart-led writers who already know they have a story to share but need guidance on the who, the where, and the how. Her ideal members are committed, not on the fence, and simply need a clear process, professional support, and community to move from idea to finished, published book. She helps with memoir, transformational, fiction, and fantasy books, and does not work on nonfiction.</p></div>
+            <div class="si-block"><h4>What They Offer</h4><ul>
+              <li>A free writing community with weekly story challenges, prompts, and craft exercises</li><li>Page One Method coaching, guiding you from outline to published book in a six-month framework</li><li>A full professional team for editing, formatting, cover design, ISBN, synopsis, and author bio</li></ul></div>
+          </div>
+        </div>
+        <p class="si-sig">Every idea deserves a page. Stop getting in your own way and get it going.</p>
+      </div>
+    </details>
+
+
+    <p class="text-center" style="margin-top:28px;">
+      <a class="btn btn--primary" href="https://example.com/community" target="_blank" rel="noopener">Join The Open Page</a>
+      <a class="btn btn--ghost" href="links">Find me at →</a>
+    </p>
+  </div></section>
+
+  <footer id="site-footer"></footer>
+  <script src="js/footer.js"></script>
+  <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});}</script>
+</body>
+</html>

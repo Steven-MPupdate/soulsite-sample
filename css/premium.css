@@ -1,0 +1,75 @@
+/* The Open Page — Alex Rivers. Dark-fantasy literary brand from her kit:
+   deep hunter green, warm gold, cream, Cormorant Garamond + Tangerine script, grey #777b7e.
+   Loaded AFTER style.css to override the frame. */
+:root{
+  --bg:#16211b; --bg-raised:#1e2b22; --bg-raised-2:#26352b;
+  --border:rgba(201,162,74,.34); --border-soft:#33443a;
+  --text:#f2ead6; --text-muted:#c0c9b6;
+  --gold:#cba24a; --gold-deep:#a9821f; --gold-bright:#e6c675; --arcane:#cba24a;
+  --font-display:"Cormorant Garamond",Georgia,serif;
+  --font-body:"Cormorant Garamond",Georgia,serif;
+}
+body{font-family:var(--font-body);color:var(--text);font-size:1.14rem;line-height:1.62;}
+body::before{background:radial-gradient(1100px 520px at 50% -8%, rgba(201,162,74,.12), transparent 62%), #16211b !important;}
+h1,h2,h3,.display,.section-title{font-family:var(--font-display);color:var(--text);font-weight:700;letter-spacing:.01em;-webkit-text-fill-color:currentColor;}
+.display{font-weight:600;line-height:1.08;}
+/* frame uses gradient-clip text (h1.display / h2.section-title) that renders transparent
+   on this palette — force a solid cream fill; gold is applied only where we want it below */
+h1.display, h2.display, h3.display, h2.section-title, .display, .section-title{
+  background:none !important; -webkit-text-fill-color:var(--text) !important; color:var(--text) !important;
+}
+.cta-band .display, .cta-band .section-title{ -webkit-text-fill-color:var(--gold-bright) !important; color:var(--gold-bright) !important; }
+.eyebrow{color:var(--gold);letter-spacing:.22em;font-weight:600;}
+.lede,.section-intro{color:var(--text-muted);font-size:1.18rem;}
+a{color:var(--gold-bright);}
+.script{font-family:"Tangerine",cursive;color:var(--gold-bright);font-weight:700;line-height:.9;}
+/* nav: deep green, gold Cormorant wordmark */
+.nav{background:rgba(13,18,14,.92);border-bottom:1px solid var(--border-soft);backdrop-filter:blur(8px);}
+.nav__brand{font-family:var(--font-display);font-weight:700;color:var(--gold-bright);font-size:1.4rem;letter-spacing:.02em;-webkit-text-fill-color:var(--gold-bright);}
+.nav__links a{color:#dfe6d6;}
+.nav__links a:hover,.nav__links a.is-active{color:#16211b;background:var(--gold);}
+.nav__toggle{color:var(--gold-bright);border:1px solid rgba(201,162,74,.4);background:transparent;}
+/* buttons: gold, dark-green text */
+.btn--primary{background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:#16211b;border:0;box-shadow:0 8px 22px rgba(0,0,0,.4);}
+.btn--primary:hover{color:#16211b;filter:brightness(1.06);}
+.btn--ghost{border:1px solid var(--gold-deep);color:var(--gold-bright);background:transparent;}
+.btn--ghost:hover{background:rgba(201,162,74,.12);color:var(--gold-bright);}
+/* hero banner art */
+.hero-banner{max-width:1000px;margin:0 auto 28px;border-radius:16px;overflow:hidden;border:1px solid var(--border-soft);box-shadow:0 18px 54px rgba(0,0,0,.55);}
+.hero-banner img{width:100%;display:block;}
+/* about */
+.about-wrap{display:flex;gap:34px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:24px;}
+.about-wrap>img{width:230px;height:auto;border-radius:14px;border:1px solid var(--border-soft);flex:0 0 auto;box-shadow:0 12px 34px rgba(0,0,0,.45);}
+.about-sig{font-family:"Tangerine",cursive;color:var(--gold-bright);font-size:2.2rem;line-height:.9;margin:14px 0 0;}
+/* offer + book cards */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:26px auto 0;}
+.tp-card{display:flex;flex-direction:column;background:var(--bg-raised);border:1px solid var(--border-soft);border-radius:14px;padding:26px 22px;box-shadow:0 10px 30px rgba(0,0,0,.35);}
+.tp-card h3{color:var(--gold-bright);margin:0 0 10px;font-size:1.45rem;}
+.tp-card p{color:var(--text-muted);flex:1;margin:0 0 18px;}
+@media(max-width:860px){ .card-grid{grid-template-columns:1fr;max-width:440px;} }
+/* book feature */
+.book-feature{display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:900px;margin:24px auto 0;background:var(--bg-raised);border:1px solid var(--border-soft);border-radius:16px;padding:28px;}
+.book-feature img{width:210px;border-radius:10px;box-shadow:0 14px 40px rgba(0,0,0,.55);flex:0 0 auto;}
+.book-feature .bf-body{flex:1 1 320px;max-width:440px;}
+/* books page: cover + description cards */
+.books-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:860px;margin:26px auto 0;}
+.book-card{display:flex;gap:22px;background:var(--bg-raised);border:1px solid var(--border-soft);border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.35);}
+.book-card img{width:135px;flex:0 0 auto;border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.5);align-self:flex-start;}
+.book-card .bc-body{display:flex;flex-direction:column;}
+.book-card h3{color:var(--gold-bright);margin:0 0 4px;font-size:1.45rem;line-height:1.1;}
+.book-card .bc-sub{color:var(--gold);font-size:.82rem;letter-spacing:.04em;margin:0 0 10px;}
+.book-card p{color:var(--text-muted);margin:0 0 16px;flex:1;}
+@media(max-width:760px){ .books-grid{grid-template-columns:1fr;max-width:480px;} .book-card{flex-direction:column;align-items:center;text-align:center;} }
+
+/* final CTA band over her art */
+.cta-band{text-align:center;border-radius:18px;padding:54px 26px;max-width:900px;margin:0 auto;
+  background:linear-gradient(rgba(16,22,18,.80),rgba(16,22,18,.92)),url("../assets/hero.png") center/cover;border:1px solid var(--border-soft);}
+.cta-band h2{color:var(--gold-bright);} .cta-band p{color:#dfe6d6;}
+.cta-band .btn--primary{background:var(--gold);color:#16211b;}
+/* footer + ecosystem credit */
+.footer{background:#0f1712;border-top:1px solid var(--border-soft);}
+.footer .mp-credit a{font-family:"Cinzel",Georgia,serif;font-style:italic;color:var(--gold-bright);text-decoration:none;}
+.footer .mp-credit a:hover{color:#ffffff;}
+/* soul insight page: gold headings */
+.si-card>summary,.si-block h4,.si-feature h4{color:var(--gold-bright)!important;}
+::selection{background:var(--gold);color:#16211b;}
