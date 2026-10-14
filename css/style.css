@@ -1126,3 +1126,41 @@ a.card:hover {
   .nav.open .nav__links { display: flex; }
   .nav__links a { display: block; width: 100%; text-align: center; }
 }
+
+/* ---------- Keyboard focus ---------- */
+.nav__links a:focus-visible,
+.btn:focus-visible,
+.ep-btn:focus-visible,
+.app-cta:focus-visible,
+a.card:focus-visible,
+.linkrow:focus-visible,
+.choice:has(input:focus-visible),
+.guest-btn:focus-visible,
+.kai-fab:focus-visible,
+.form-row input:focus-visible,
+.form-row textarea:focus-visible,
+.form-row select:focus-visible,
+.gate__row input:focus-visible,
+.kai-input textarea:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__links a,
+  .btn,
+  .ep-btn,
+  .app-cta,
+  .card,
+  .linkrow,
+  .book-card,
+  .choice,
+  .guest-btn,
+  .kai-fab {
+    transition: none;
+  }
+
+  .live-dot {
+    animation: none;
+  }
+}
